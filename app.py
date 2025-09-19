@@ -24,12 +24,10 @@ def index():
         lift = float(request.form['lift'])
 
         if file:
-            # Save uploaded file
             filename = secure_filename(file.filename)
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
 
-            # ✅ Replace pd.read_csv with this plain file read:
             transactions = []
             with open(file_path, 'r') as f:
                 for line in f:
@@ -72,4 +70,5 @@ def download():
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
+
 
