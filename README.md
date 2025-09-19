@@ -17,7 +17,7 @@ The project includes both:
 ---
 
 ## 📂 Folder Structure  
-
+```
 Market-Basket-Analysis/
 │
 ├── static/               # Static assets (CSS, JS, images)
