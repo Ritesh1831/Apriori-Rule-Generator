@@ -31,7 +31,7 @@ Market-Basket-Analysis/
 ├── requirements.txt      # Python dependencies
 ├── README.md             # Project documentation
 └── .render.yaml          # Deployment configuration (for Render/Cloud hosting)
-
+```
 
 ---
 
